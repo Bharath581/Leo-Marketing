@@ -1,0 +1,1 @@
+Replace this file with your logo image saved at assets/images/logo-placeholder/logo.png (recommended PNG, 300x100).

@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - LeO Marketing Services</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Montserrat:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body class="contact-page">
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <div class="nav-logo">
+                    <a href="index.html" class="logo">
+                        <img src="assets/images/logo.png">
+                        <span>LeO Marketing</span>
+                    </a>
+                </div>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="services.html" class="nav-link">Services <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="services.html">All Services</a></li>
+                            <li class="dropdown-submenu">
+                                <a href="service-software.html">Software & IT <i class="fas fa-chevron-right"></i></a>
+                                <ul class="sub-dropdown-menu">
+                                    <li><a href="service-software.html">All Software & IT</a></li>
+                                    <li><a href="service-software-java.html">Java Development</a></li>
+                                    <li><a href="service-software-web.html">Web Applications</a></li>
+                                    <li><a href="service-software-mobile.html">Mobile Apps</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="service-social.html">Social Media & YouTube</a></li>
+                            <li><a href="service-realestate.html">Real Estate</a></li>
+                            <li><a href="service-public.html">Public Services</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="projects.html" class="nav-link">Projects <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="projects.html">All Projects</a></li>
+                            <li><a href="projects-marketing.html">Marketing Campaigns</a></li>
+                            <li><a href="projects-realestate.html">Real Estate Portals</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="team.html" class="nav-link">Team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="blog.html" class="nav-link">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link active">Contact</a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Contact Page Content -->
+    <main class="contact-main">
+        <!-- Page Header -->
+        <section class="page-header">
+            <div class="container">
+                <div class="page-header-content">
+                    <h1>Get In Touch</h1>
+                    <p>Have a project in mind or want to learn more about our services? We'd love to hear from you. Send
+                        us a message and we'll respond as soon as possible.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact-section">
+            <div class="container">
+                <div class="contact-grid">
+                    <!-- Contact Information -->
+                    <div class="contact-info-sidebar">
+                        <div class="contact-info-header">
+                            <h2>Let's Start a Conversation</h2>
+                            <p>We're here to help you bring your digital vision to life. Reach out to us through any of
+                                the following channels.</p>
+                        </div>
+
+                        <div class="contact-methods">
+                            <div class="contact-method">
+                                <div class="method-icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div class="method-content">
+                                    <h3>Visit Our Office</h3>
+                                    <p>123 Business Street<br>City, State 12345<br>Country</p>
+                                </div>
+                            </div>
+
+                            <div class="contact-method">
+                                <div class="method-icon">
+                                    <i class="fas fa-phone"></i>
+                                </div>
+                                <div class="method-content">
+                                    <h3>Call Us</h3>
+                                    <p>+91 99999 00000<br>+91 88888 11111</p>
+                                </div>
+                            </div>
+
+                            <div class="contact-method">
+                                <div class="method-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="method-content">
+                                    <h3>Email Us</h3>
+                                    <p>info@leomarketing.example</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form -->
+                    <div class="contact-form-container">
+                        <div class="form-card">
+                            <div class="form-header">
+                                <h2>Send Us a Message</h2>
+                                <p>Fill out the form below and we'll get back to you within 24 hours.</p>
+                            </div>
+
+                            <form id="contact-form-php" class="contact-form" action="assets/php/contact_submit.php"
+                                method="POST">
+                                <input name="page" type="hidden" value="contact">
+
+                                <!-- Name - Full Width -->
+                                <div class="form-group full-width">
+                                    <label for="name" class="required">Full Name</label>
+                                    <input type="text" id="name" name="name" required
+                                        placeholder="Enter your full name">
+                                </div>
+
+                                <!-- Email & Phone - 50% each -->
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="email" class="required">Email Address</label>
+                                        <input type="email" id="email" name="email" required
+                                            placeholder="you@company.com">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="phone">Phone Number</label>
+                                        <input type="tel" id="phone" name="phone" placeholder="+1 (555) 123-4567">
+                                    </div>
+                                </div>
+
+                                <!-- Service & Subject - 50% each -->
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="service" class="required">Service Interested In</label>
+                                        <select id="service" name="service" required>
+                                            <option value="">Select a service</option>
+                                            <option value="software">Software & IT Projects</option>
+                                            <option value="social">Social Media & YouTube</option>
+                                            <option value="realestate">Real Estate Services</option>
+                                            <option value="public">Public Services</option>
+                                            <option value="other">Other Services</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="subject">Subject</label>
+                                        <select id="subject" name="subject">
+                                            <option value="">Choose subject</option>
+                                            <option value="general">General Inquiry</option>
+                                            <option value="quote">Request a Quote</option>
+                                            <option value="partnership">Partnership Opportunity</option>
+                                            <option value="support">Technical Support</option>
+                                            <option value="other">Other</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <!-- Message - Full Width -->
+                                <div class="form-group full-width">
+                                    <label for="message" class="required">Your Message</label>
+                                    <textarea id="message" name="message" rows="6" required
+                                        placeholder="Tell us about your project, requirements, or any questions you might have..."></textarea>
+                                </div>
+
+                                <!-- Submit Button -->
+                                <div class="form-submit">
+                                    <button type="submit" class="btn btn-primary" id="contact-submit-btn">
+                                        <i class="fas fa-paper-plane"></i>
+                                        Send Message
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Map Section -->
+        <section class="map-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Our Location</h2>
+                    <p>Visit our office or get in touch for a meeting.</p>
+                </div>
+
+                <div class="map-container">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.177631294249!2d-74.00594908459418!3d40.71278367933185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a316e12b29d%3A0x1c92ebe8a88a3a8a!2s123%20Business%20Street%2C%20New%20York%2C%20NY%2010001!5e0!3m2!1sen!2sus!4v1234567890123"
+                        width="100%" height="450"
+                        style="border:0; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);"
+                        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="faq-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Frequently Asked Questions</h2>
+                    <p>Quick answers to common questions about our services.</p>
+                </div>
+
+                <div class="faq-grid">
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>How quickly do you respond to inquiries?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>We typically respond to all inquiries within 24 hours during business days.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Do you offer free consultations?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Yes! We offer free initial consultations to discuss your project requirements.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="assets/images/logo.png" alt="LeO Marketing" loading="lazy">
+                        <span>LeO Marketing</span>
+                    </div>
+                    <p>Delivering high-quality digital services that scale businesses.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="brand.html">Brand</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Stay Updated</h3>
+                    <p>Subscribe to our newsletter.</p>
+                    <form id="newsletter-form" class="newsletter-form">
+                        <input type="email" id="newsletter-email" placeholder="Enter your email" required>
+                        <button type="submit" class="btn btn-primary"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="current-year"></span> LeO Marketing Services. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Supabase SDK (via CDN) -->
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <!-- Custom Supabase Wrapper -->
+    <script src="assets/js/supabase-client.js"></script>
+    <!-- Main JS -->
+    <script src="assets/js/main.js"></script>
+    <script>
+        // Check for success parameter from PHP redirect
+        const urlParams = new URLSearchParams(window.location.search);
+        if (urlParams.get('success') === '1') {
+            // Wait for main.js to load showToast
+            window.addEventListener('load', () => {
+                // If showToast exists in global scope (it might be inside DOMContentLoaded in main.js, 
+                // so we might need to recreate it or just use alert/custom toast)
+                // Inspecting main.js, showToast defines inside DOMContentLoaded. 
+                // So we can't call it directly exactly.
+                // Let's create a simple fallback or just alerts. 
+                // Better: Create a standalone toast since main.js scope is closed.
+                const container = document.createElement('div');
+                container.className = 'toast-container';
+                document.body.appendChild(container);
+
+                const toast = document.createElement('div');
+                toast.className = 'toast success';
+                toast.innerHTML = '<i class="fas fa-check-circle"></i> <span>Message sent successfully!</span>';
+                container.appendChild(toast);
+
+                setTimeout(() => {
+                    toast.style.animation = 'slideIn 0.3s ease reverse forwards';
+                    setTimeout(() => toast.remove(), 300);
+                }, 4000);
+
+                // Clean URL
+                window.history.replaceState({}, document.title, window.location.pathname);
+            });
+        }
+    </script>
+</body>
+
+</html>

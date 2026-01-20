@@ -1,0 +1,1 @@
+Organize images into subfolders: logo-placeholder, projects, team
